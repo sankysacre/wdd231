@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        display: block;
+        width: auto;
+        background: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation li a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+
+    .about-me {
+        grid-column: 1 / 2;
+    }
+
+    .country-info {
+        grid-column: 2 / 3;
+    }
+
+    .course-work {
+        grid-column: 1 / -1;
+    }
+
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

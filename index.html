@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page - Senga Sanky Sacre</title>
+    <meta name="description" content="WDD 231 Course Home Page for Senga Sanky Sacre showcasing web frontend development projects and certificate coursework.">
+    <meta name="author" content="Senga Sanky Sacre">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <svg viewBox="0 0 24 24" width="36" height="36" aria-hidden="true">
+                <path fill="#ffffff" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span class="student-name">Senga Sanky Sacre</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>WDD 231: Web Frontend Development I</h1>
+        
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.webp" alt="Profile Picture of Senga Sanky Sacre" width="150" height="150" loading="lazy">
+                <p>Hello! I am Senga Sanky Sacre, a student pursuing coursework in web development and software engineering. I enjoy building responsive web pages, writing clean code, and working with modern JavaScript, Python, and C# applications.</p>
+            </div>
+        </section>
+
+        <section class="card country-info">
+            <h2>Uganda Country Info</h2>
+            <p><strong>Location:</strong> East Africa</p>
+            <p><strong>Capital:</strong> Kampala</p>
+            <p>Uganda is known as the Pearl of Africa, featuring breathtaking landscapes, Lake Bunyonyi, and vibrant cultural heritage.</p>
+        </section>
+
+        <section class="card course-work">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list" class="course-grid"></div>
+            <p id="total-credits" class="credits-display"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/sankysacre" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Senga Sanky Sacre | Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
