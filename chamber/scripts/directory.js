@@ -9,7 +9,6 @@ async function getMembersData() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        // If your JSON is an array directly use data, if it's an object with a members property use data.members
         displayMembers(data); 
     } catch (error) {
         console.error('Error fetching members data:', error);
@@ -56,10 +55,10 @@ const displayMembers = (members) => {
     });
 };
 
-// Call the function to fetch and display the members on page load
+// Initialize data retrieval on page load
 getMembersData();
 
-// Optional: Grid / List view toggle button functionality
+// Grid / List view toggle button functionality
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const display = document.querySelector("#cards");

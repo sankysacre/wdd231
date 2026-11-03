@@ -7,32 +7,35 @@
     <meta name="description" content="Directory page showcasing local chamber member businesses, services, and membership tiers.">
     <meta name="author" content="Senga Sanky Sacre">
     
-    <!-- Open Graph Meta Tags for Facebook / Social Media -->
+    <!-- Open Graph Social Meta Tags -->
     <meta property="og:title" content="Chamber Directory">
     <meta property="og:description" content="Explore local chamber member businesses and connect with our community network.">
-    <meta property="og:image" content="https://sankysacre.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:image" content="https://sankysacre.github.io/wdd231/chamber/images/techhub.jpg">
     <meta property="og:url" content="https://sankysacre.github.io/wdd231/chamber/directory.html">
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico">
 
-    <!-- CSS Stylesheets -->
+    <!-- Google Fonts Preconnects and Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 32rem)">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- JavaScript -->
+    <!-- External JavaScript with defer -->
     <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo-box">
-            <span>Chamber of Commerce</span>
-        </div>
+        <span>Chamber of Commerce</span>
         <nav>
-            <ul class="navigation">
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
@@ -42,18 +45,17 @@
     <main>
         <h1>Member Directory</h1>
         
-        <!-- Grid/List View Toggles -->
         <div class="menu">
-            <button id="grid">⏹️ Grid</button>
-            <button id="list">📋 List</button>
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
         </div>
 
-        <article id="cards" class="grid"></article>
+        <!-- Container where JavaScript renders member cards -->
+        <div id="cards" class="grid"></div>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Senga Sanky Sacre | WDD 231</p>
-        <p id="lastModified"></p>
+        <p>&copy; | Senga Sanky Sacre | WDD 231</p>
     </footer>
 </body>
 </html>
