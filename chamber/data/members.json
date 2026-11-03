@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Kampala Tech Hub",
+    "address": "12 Lumumba Ave, Kampala",
+    "phone": "+256 414 123456",
+    "website": "https://example.com/techhub",
+    "image": "techhub.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Nile Coffee Roasters",
+    "address": "45 Jinja Road, Kampala",
+    "phone": "+256 392 654321",
+    "website": "https://example.com/nilecoffee",
+    "image": "coffee.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Pearl Crafts & Art",
+    "address": "8 Buganda Road, Kampala",
+    "phone": "+256 701 987654",
+    "website": "https://example.com/pearlcrafts",
+    "image": "crafts.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Victoria Logistics",
+    "address": "19 Port Bell Rd, Luzira",
+    "phone": "+256 772 112233",
+    "website": "https://example.com/logistics",
+    "image": "logistics.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Savannah Safaris",
+    "address": "5 Kampala Road",
+    "phone": "+256 414 998877",
+    "website": "https://example.com/safaris",
+    "image": "safaris.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Pearl Fresh Foods",
+    "address": "Nakasero Market St",
+    "phone": "+256 702 334455",
+    "website": "https://example.com/freshfoods",
+    "image": "foods.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Ecowave Energy Solutions",
+    "address": "Industrial Area, Jinja Rd",
+    "phone": "+256 393 445566",
+    "website": "https://example.com/ecowave",
+    "image": "ecowave.jpg",
+    "membershipLevel": 3
+  }
+]

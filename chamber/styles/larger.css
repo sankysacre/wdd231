@@ -1,0 +1,20 @@
+/* larger.css - Desktop Layout Enhancements */
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+nav ul.navigation {
+    gap: 2rem;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
