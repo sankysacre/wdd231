@@ -1,22 +1,18 @@
-/* larger.css - Desktop Layout Enhancements */
+@media (min-width: 640px) {
+  header {
+    padding: 1rem 3rem;
+    /* Remove justify-content and align-items if they don't change from small.css */
+  }
 
-@media (min-width: 64em) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 3rem;
-    }
+  nav ul.navigation {
+    gap: 2rem;
+  }
 
-    nav ul.navigation {
-        gap: 2rem;
-    }
+  main {
+    padding: 0 2rem;
+  }
 
-    main {
-        padding: 0 2rem;
-    }
-
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
