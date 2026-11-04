@@ -1,20 +1,22 @@
 /* larger.css - Desktop Layout Enhancements */
 
-header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-}
+@media (min-width: 64em) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
 
-nav ul.navigation {
-    gap: 2rem;
-}
+    nav ul.navigation {
+        gap: 2rem;
+    }
 
-main {
-    padding: 0 2rem;
-}
+    main {
+        padding: 0 2rem;
+    }
 
-.grid {
-    grid-template-columns: repeat(3, 1fr);
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
