@@ -1,7 +1,6 @@
-@media (min-width: 640px) {
+@media screen and (min-width: 37.5em) {
   header {
     padding: 1rem 3rem;
-    /* Remove justify-content and align-items if they don't change from small.css */
   }
 
   nav ul.navigation {
