@@ -1,17 +1,14 @@
 @media screen and (min-width: 37.5em) {
-  header {
-    padding: 1rem 3rem;
-  }
+    header {
+        padding: 1rem 3rem;
+    }
 
-  nav ul.navigation {
-    gap: 2rem;
-  }
+    nav ul.navigation {
+        gap: 2rem;
+    }
 
-  main {
-    padding: 0 2rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    main {
+        padding: 0 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

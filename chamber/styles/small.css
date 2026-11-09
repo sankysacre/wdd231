@@ -17,6 +17,11 @@ header {
     padding: 1rem;
 }
 
+.logo-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 nav ul.navigation {
     list-style: none;
     display: flex;
@@ -44,41 +49,15 @@ main {
     gap: 1.5rem;
 }
 
-h1 {
+main h1 {
     color: #003366;
-    text-align: center;
-    margin-bottom: 1.5rem;
+    margin-top: 0;
+    grid-column: 1 / -1;
+    text-align: left;
 }
 
-/* --- Menu & View Toggle Buttons --- */
-.menu {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.menu button {
-    background-color: #003366;
-    color: #ffffff;
-    border: none;
-    padding: 0.5rem 1.2rem;
-    margin: 0 0.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.menu button:hover {
-    background-color: #00509e;
-}
-
-/* --- Grid View Layout --- */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.grid section, .card {
+/* --- Cards & Components --- */
+.card, .weather-card {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -86,75 +65,7 @@ h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.grid h3 {
-    color: #003366;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.grid p, .grid a {
-    color: #555;
-    font-size: 0.95rem;
-    margin: 0.4rem 0;
-}
-
-.grid a {
-    color: #003366;
-    text-decoration: none;
-}
-
-.grid a:hover {
-    text-decoration: underline;
-}
-
-.grid img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* --- List View Layout --- */
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.list section {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    text-align: left;
-}
-
-.list section img {
-    display: none;
-}
-
-.list h3 {
-    color: #003366;
-    margin: 0;
-}
-
-.list p, .list a {
-    color: #555;
-    font-size: 0.95rem;
-    margin: 0.2rem 0;
-}
-
 /* --- Weather Card & Forecast Styles --- */
-.weather-card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
 .weather-current {
     display: flex;
     align-items: center;
@@ -220,24 +131,4 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
-}
-
-/* --- Larger Screen Media Queries --- */
-@media screen and (min-width: 37.5em) {
-    header {
-        padding: 1rem 3rem;
-    }
-
-    nav ul.navigation {
-        gap: 2rem;
-    }
-
-    main {
-        padding: 0 2rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
