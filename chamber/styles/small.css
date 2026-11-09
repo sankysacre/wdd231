@@ -40,6 +40,8 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    display: grid;
+    gap: 1.5rem;
 }
 
 h1 {
@@ -76,12 +78,11 @@ h1 {
     gap: 1.5rem;
 }
 
-.grid section {
+.grid section, .card {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
@@ -131,7 +132,7 @@ h1 {
 }
 
 .list section img {
-    display: none; /* Hide logos in list view for a clean tabular layout */
+    display: none;
 }
 
 .list h3 {
@@ -145,6 +146,73 @@ h1 {
     margin: 0.2rem 0;
 }
 
+/* --- Weather Card & Forecast Styles --- */
+.weather-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.weather-current img {
+    width: 64px;
+    height: 64px;
+}
+
+.current-temp {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 1rem 0;
+}
+
+.forecast-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.day-name {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.day-temp {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 0.25rem;
+}
+
 /* --- Footer --- */
 footer {
     background-color: #003366;
@@ -152,4 +220,24 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
+}
+
+/* --- Larger Screen Media Queries --- */
+@media screen and (min-width: 37.5em) {
+    header {
+        padding: 1rem 3rem;
+    }
+
+    nav ul.navigation {
+        gap: 2rem;
+    }
+
+    main {
+        padding: 0 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
