@@ -163,18 +163,16 @@ main {
 }
 
 /* Join Page */
-.join-layout,
-.membership-cards {
+.join-layout {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-}
-
-.join-layout {
     margin-top: 1rem;
 }
 
 .membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
