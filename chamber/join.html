@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber - Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership in the Chamber of Commerce and explore NP, Bronze, Silver, and Gold membership benefits.">
+    <meta name="author" content="Senga Sanky Sacre">
+
+    <!-- Open Graph Social Meta Tags -->
+    <meta property="og:title" content="Join the Chamber of Commerce">
+    <meta property="og:description" content="Submit a membership application and compare Chamber of Commerce membership levels and benefits.">
+    <meta property="og:image" content="https://sankysacre.github.io/wdd231/chamber/images/techhub.jpg">
+    <meta property="og:url" content="https://sankysacre.github.io/wdd231/chamber/join.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Page JavaScript -->
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="logo-title">Chamber of Commerce</span>
+        <nav aria-label="Primary Navigation">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Chamber Membership Application</h1>
+
+        <div class="join-layout">
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Applicant &amp; Business Information</legend>
+
+                    <label>
+                        <span>First Name *</span>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <span>Last Name *</span>
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <span>Organizational Title</span>
+                        <input
+                            type="text"
+                            id="org-title"
+                            name="org-title"
+                            title="Enter your role or title (at least 7 letters, spaces, or hyphens)"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\- ]{7,}"
+                        >
+                    </label>
+
+                    <label>
+                        <span>Email Address *</span>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Enter a valid email address"
+                            autocomplete="email"
+                            placeholder="member@example.com"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <span>Mobile Phone Number *</span>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <span>Business / Organization Name *</span>
+                        <input
+                            type="text"
+                            id="organization"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <span>Membership Level *</span>
+                        <select
+                            id="membership"
+                            name="membership"
+                            title="Select a membership level"
+                            autocomplete="off"
+                            required
+                        >
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span>Business / Organization Description</span>
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="4"
+                            title="Describe your business or organization"
+                            autocomplete="off"
+                        ></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                </fieldset>
+
+                <input type="submit" value="Submit Membership Application" class="submit-btn">
+            </form>
+
+            <aside class="membership-cards" aria-label="Membership Levels">
+                <h2>Membership Levels</h2>
+
+                <article class="level-card card-animate">
+                    <h3>NP Membership</h3>
+                    <p class="level-tag">Non-Profit &bull; Free</p>
+                    <button type="button" class="benefit-btn" data-modal="modal-np">View Benefits</button>
+                </article>
+
+                <article class="level-card card-animate">
+                    <h3>Bronze Membership</h3>
+                    <p class="level-tag">Starter &bull; Essential Access</p>
+                    <button type="button" class="benefit-btn" data-modal="modal-bronze">View Benefits</button>
+                </article>
+
+                <article class="level-card card-animate">
+                    <h3>Silver Membership</h3>
+                    <p class="level-tag">Growth &bull; Enhanced Visibility</p>
+                    <button type="button" class="benefit-btn" data-modal="modal-silver">View Benefits</button>
+                </article>
+
+                <article class="level-card card-animate">
+                    <h3>Gold Membership</h3>
+                    <p class="level-tag">Premier &bull; Maximum Exposure</p>
+                    <button type="button" class="benefit-btn" data-modal="modal-gold">View Benefits</button>
+                </article>
+            </aside>
+        </div>
+
+        <!-- Four Modals for Membership Level Benefits -->
+        <dialog id="modal-np" class="benefit-dialog">
+            <div class="dialog-header">
+                <h2>NP Membership Benefits</h2>
+                <button type="button" class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <p>Designed for registered non-profit organizations at no cost.</p>
+            <ul>
+                <li>Listing in the Chamber Member Directory</li>
+                <li>Access to community networking mixers</li>
+                <li>Monthly Chamber newsletter updates</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-bronze" class="benefit-dialog">
+            <div class="dialog-header">
+                <h2>Bronze Membership Benefits</h2>
+                <button type="button" class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <p>Ideal for small businesses building local connections.</p>
+            <ul>
+                <li>All NP Membership benefits</li>
+                <li>Discounted admission to workshops and seminars</li>
+                <li>Basic business profile in the directory</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-silver" class="benefit-dialog">
+            <div class="dialog-header">
+                <h2>Silver Membership Benefits</h2>
+                <button type="button" class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <p>Built for growing businesses seeking stronger regional reach.</p>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Priority event invitations and member discounts</li>
+                <li>Seasonal spotlight eligibility on the home page</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-gold" class="benefit-dialog">
+            <div class="dialog-header">
+                <h2>Gold Membership Benefits</h2>
+                <button type="button" class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
+            <p>Comprehensive visibility, training, and leadership opportunities.</p>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Featured home page spotlight placement</li>
+                <li>Complimentary training sessions and VIP event passes</li>
+            </ul>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Senga Sanky Sacre | WDD 231</p>
+    </footer>
+</body>
+</html>
