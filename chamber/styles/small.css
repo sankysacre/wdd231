@@ -23,6 +23,11 @@ footer {
     padding: 1.25rem 1rem 1rem;
 }
 
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .logo-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -60,13 +65,18 @@ main {
 }
 
 /* Home & Shared Cards */
-.card {
+.card,
+.level-card,
+.summary-card {
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     padding: 1rem;
-    margin-bottom: 1rem;
     background-color: #f8fafc;
     color: #111111;
+}
+
+.card {
+    margin-bottom: 1rem;
 }
 
 .weather-current {
@@ -125,13 +135,19 @@ main {
     margin-bottom: 1rem;
 }
 
-.menu button {
-    padding: 0.5rem 1rem;
+.menu button,
+.submit-btn,
+.benefit-btn,
+.close-modal {
     background-color: #1b365d;
     color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.menu button {
+    padding: 0.5rem 1rem;
 }
 
 #cards.grid {
@@ -147,11 +163,19 @@ main {
 }
 
 /* Join Page */
-.join-layout {
+.join-layout,
+.membership-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+}
+
+.join-layout {
     margin-top: 1rem;
+}
+
+.membership-cards {
+    gap: 1rem;
 }
 
 .join-form fieldset {
@@ -184,26 +208,7 @@ main {
 .submit-btn {
     margin-top: 1rem;
     padding: 0.75rem 1.25rem;
-    background-color: #1b365d;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
     font-weight: 700;
-    cursor: pointer;
-}
-
-.membership-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-.level-card {
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
-    padding: 1rem;
-    background-color: #f8fafc;
-    color: #111111;
 }
 
 @keyframes cardReveal {
@@ -236,11 +241,6 @@ main {
 .benefit-btn {
     margin-top: 0.5rem;
     padding: 0.5rem 0.85rem;
-    background-color: #1b365d;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 .benefit-dialog {
@@ -250,3 +250,35 @@ main {
     border-radius: 8px;
     padding: 1.25rem;
     background-color: #ffffff;
+    color: #111111;
+}
+
+.benefit-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.close-modal {
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 0.25rem 0.6rem;
+}
+
+/* Thank You Page */
+.summary-card dl > div {
+    margin-bottom: 0.75rem;
+}
+
+.summary-card dt {
+    font-weight: 700;
+}
+
+.summary-card dd {
+    margin: 0.2rem 0 0;
+}
