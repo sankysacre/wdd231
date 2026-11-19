@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -64,7 +65,7 @@ main {
     margin: 0 auto;
 }
 
-/* Home & Shared Cards */
+/* Shared Cards */
 .card,
 .level-card,
 .summary-card {
@@ -72,13 +73,13 @@ main {
     border-radius: 6px;
     padding: 1rem;
     background-color: #f8fafc;
-    color: #111111;
 }
 
 .card {
     margin-bottom: 1rem;
 }
 
+/* Weather */
 .weather-current {
     display: flex;
     align-items: center;
@@ -128,7 +129,7 @@ main {
     font-weight: 700;
 }
 
-/* Directory Grid & List */
+/* Directory */
 .menu {
     display: flex;
     gap: 0.5rem;
@@ -200,7 +201,6 @@ main {
     border-radius: 4px;
     font: inherit;
     background-color: #ffffff;
-    color: #111111;
 }
 
 .submit-btn {
@@ -209,11 +209,13 @@ main {
     font-weight: 700;
 }
 
+/* Membership Cards */
 @keyframes cardReveal {
     from {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -241,6 +243,7 @@ main {
     padding: 0.5rem 0.85rem;
 }
 
+/* Dialog */
 .benefit-dialog {
     max-width: 460px;
     width: 90%;
@@ -248,7 +251,6 @@ main {
     border-radius: 8px;
     padding: 1.25rem;
     background-color: #ffffff;
-    color: #111111;
 }
 
 .benefit-dialog::backdrop {
